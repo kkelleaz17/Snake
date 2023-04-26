@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/e33d72aa7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="INFO">
+        <p id="SCORE">Score:0</p>
+        <p id="TIME">00:00</p>
+        <button id="SETTINGSBUTTON"><i class="fa-solid fa-gear"></i></button>
+    </div>
+<div class="BOARD" id="BOARD">
+    <div id="FOOD"></div>
+<div id="SNAKE0" class="SNAKE"></div>
+<div id="LOSSANDWIN" class="DONTSEEME">
+    <h1>Try again?</h1>
+<button id="RESTART"><i class="fa-solid fa-rotate-right"></i></button>
+</div>
+<div id="SETTINGS" class="SETTINGS HIDE">
+    <div>
+        <input type="checkbox" id="BC" checked>
+        <label>Body Collision</label>
+    </div>
+    <div>
+        <input type="checkbox" id="WC" checked>
+        <label>Wall Collision</label>
+    </div>
+    <div>
+        <input type="color" id="BODYCOLOR" value="#228B22">
+        <label>Body Color</label>
+    </div>
+    <div>
+        <label>Food Color</label>
+        <input type="color" id="FOODCOLOR" value="#FF0000">
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+:root{
+    --SNAKE:#328B22;
+    --FOOD:RED;
+}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,900&display=swap');
+
+body{
+margin: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+flex-direction: column;
+}
+
+.INFO{
+    display: flex;
+    width: 300px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BOARD{
+    width: 320px;
+    height: 320px;
+    background-color: black;
+    position: relative;
+}
+
+
+.DONTSEE{
+display: none;
+}
+.SEEME{
+    display: flex;
+    animation: COMEIN 2.5s linear forwards;
+    z-index: 5;
+}
+
+
+#LOSSANDWIN{
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    background-color: black;
+    opacity: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+#LOSSANDWIN button{
+    background-color: transparent;
+    font-size: 50px;
+    color: white;
+}
+#LOSSANDWIN button:hover{
+    animation: ROTATE 1s infinite linear;
+}
+
+@keyframes ROTATE {
+    1%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}
+@keyframes COMEIN {
+    1%{opacity: 0%;}
+    100%{opacity: 60%;}
+}
+
+
+
+
+.SNAKE{
+height: 20px;
+width: 20px;
+background-color: var(--SNAKE);
+position: absolute;
+}
+
+
+#FOOD{
+height: 20px;
+width: 20px;
+background-color: var(--FOOD);
+position: absolute;
+}
+
+
+.HIDE{
+    display: none;
+}
+.SHOW{
+    display: flex;
+    z-index: 6;
+}
+
+.INFO button{
+    background-color: transparent;
+    border: 0px;
+    font-size: 25px;
+}
+#SETTINGSBUTTON:hover{
+    animation: ROTATE 1s infinite linear;
+}
+
+.SETTINGS{
+    color: white;
+    background-color: black;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    flex-direction: column;
+    height: 320px;
+}
+.SETTINGS div{
+    width: 100%;
+    height: 50px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.SETTINGS div label{
+    margin-inline:5px
+}
