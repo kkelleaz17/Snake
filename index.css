@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+:root{
+    --BORDER:5px;
+  }
+  body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .SCORE{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width:250px;
+    font-size: 35px;
+    font-family: 'Signika Negative', sans-serif;
+  }
+  #GAMEBOARD{
+  position: relative;
+  width:250px;
+  height:500px;
+  background: grey;
+  }
+  #GAMEBOARD div{
+    height: 15px;
+    width:  15px;
+    position: absolute;
+  }
+  
+  /*  <==== 25px for each ====>  */
+  
+  
+  
+  
+  
+  
+  
+  
+  /*  <==== COLORS ====>  */
+  .GREEN{
+    background: #18e42a;
+    border-top:solid #cafed3 var(--BORDER);
+    border-left:solid #1ec31f var(--BORDER);
+    border-right:solid #1ec31f var(--BORDER);
+    border-bottom:solid #0b941b var(--BORDER);
+  }
+  .YELLOW{
+    background: #f1f100;
+    border-top:solid #ffff69 var(--BORDER);
+    border-left:solid #dad700 var(--BORDER);
+    border-right:solid #d8d800 var(--BORDER);
+    border-bottom:solid #787a00 var(--BORDER);
+  }
+  .BLUE{
+    background: #0000f3;
+    border-top:solid #9798ff var(--BORDER);
+    border-left:solid #0000db var(--BORDER);
+    border-right:solid #0000db var(--BORDER);
+    border-bottom:solid #03065a var(--BORDER);
+  }
+  .PURPLE{
+    background:#9d00f5;
+    border-top:solid #d1a2ed var(--BORDER);
+    border-left:solid #7e11b3 var(--BORDER);
+    border-right:solid #7e11b3 var(--BORDER);
+    border-bottom:solid #560089 var(--BORDER);
+  }
+  
+  .RED{
+    background:#ed0102;
+    border-top:solid #ff9394 var(--BORDER);
+    border-left:solid #b5100e var(--BORDER);
+    border-right:solid #b5100e var(--BORDER);
+    border-bottom:solid #980000 var(--BORDER);
+  }
+  .ORANGE{
+    background:#f0a004;
+    border-top:solid #ffdb72 var(--BORDER);
+    border-left:solid #c99024 var(--BORDER);
+    border-right:solid #c99024 var(--BORDER);
+    border-bottom:solid #6e5117 var(--BORDER);
+  }
+  
+  
+  .LIGHTBLUE{
+    background:#00f1e9;
+    border-top:solid #88ffff var(--BORDER);
+    border-left:solid #04efea var(--BORDER);
+    border-right:solid #04efea var(--BORDER);
+    border-bottom:solid #008585
+      var(--BORDER);
+  }
